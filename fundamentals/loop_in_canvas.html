@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <canvas height="1080" width="1080"></canvas>
+
+        <script>
+            window.onload = function() {
+                description();
+            };
+
+            let canvas = document.querySelector("canvas");
+            let context = canvas.getContext("2d");
+
+            // Set the interval to draw the random pattern rectangles
+            setInterval(function() {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                draw();
+            }, 1000);
+
+            // Define the dimensions and spacing for the rectangle patterns
+            let width = 100;
+            let height = 100;
+            let gap = 20;
+            let x, y;
+
+            // Function to draw random rectangle patterns
+            function draw() {
+                context.lineWidth = 4;
+                for (let i = 0; i < 7; i++) {
+                    for (let j = 0; j < 7; j++) {
+                        x = 100 + (width + gap) * i;
+                        y = 100 + (height + gap) * j;
+
+                        // Uncomment to display the bounding rectangles
+                        // context.beginPath();
+                        // context.rect(x, y, width, height);
+                        // context.stroke();
+    
+                        // Generate random rectangle patterns
+                        if (Math.random() > 0.5) {
+                            context.beginPath();
+                            context.rect(x + 25, y + 25, width - 50, height - 50);
+                            context.fill();
+                        }
+                    }
+                }
+            }
+
+            // A brief description of this project
+            function description() {
+                console.log("This project is an example of using Loop in Canvas.");
+            }
+        </script>
+    </body>
+</html>

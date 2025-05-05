@@ -1,0 +1,15 @@
+{
+  "name": "creative-codes",
+  "version": "1.0.0",
+  "description": "My collection of Creative Coding is dedicated to learning and hopefully helping people learn too",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas-sketch": "^0.7.7"
+  }
+}

@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <canvas height="640" width="640"></canvas>
+
+        <script>
+            window.onload = function() {
+                description();
+            };
+
+            let canvas = document.querySelector("canvas");
+            let context = canvas.getContext("2d");
+
+            // Draw a rectangle
+            context.fillStyle = "#F0DFB4";
+            context.fillRect(0, 0, 480, 480);
+
+            // Draw an outline around the rectangle
+            context.lineWidth = 4;
+            context.beginPath();
+            context.rect(0, 0, 480, 480);
+            context.strokeStyle = "#000";
+            context.stroke();
+
+            // Draw a circle in middle of the rectangle
+            context.beginPath();
+            context.arc(240, 240, 100, 0, Math.PI * 2);
+            context.fillStyle = "#C63D19";
+            context.fill();
+
+            // A brief description of this project
+            function description() {
+                console.log("This project is an example of using Canvas in creative coding.");
+            }
+        </script>
+    </body>
+</html>

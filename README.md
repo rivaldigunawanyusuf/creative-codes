@@ -11,6 +11,8 @@ My collection of Creative Coding is dedicated to learning and hopefully helping 
 ## Attribution
 
 - [canvas-sketch](https://github.com/mattdesl/canvas-sketch) - canvas-sketch is a loose collection of tools, modules, and resources for creating generative art in JavaScript and the browser. Created by [mattdesl](https://github.com/mattdesl). Click the link to access [How to use Canvas Sketch](#how-to-use-canvas-sketch) in this project.
+- [canvas-sketch-util](https://github.com/mattdesl/canvas-sketch-util) - A collection of utilities for working with canvas-sketch, including math helpers, random number generators, and more. Created by [mattdesl](https://github.com/mattdesl).
+
 ## How to use Canvas Sketch
 
 Run the following command in the terminal to start a specific sketch:
